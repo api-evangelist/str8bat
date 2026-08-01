@@ -1,0 +1,33 @@
+generated: '2026-07-21'
+method: searched
+source: live probe of https://str8bat.com/.well-known/*
+host: https://str8bat.com
+note: >-
+  str8bat.com is served by Shopify; the discovery documents below are provided by
+  the Shopify commerce platform (customer-account OIDC and the Universal Commerce
+  Protocol agent-commerce surface), not a first-party str8bat developer API.
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: str8bat-openid-configuration.json
+  note: Shopify customer-account OpenID Connect discovery
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: str8bat-oauth-authorization-server.json
+  note: RFC 8414 authorization-server metadata (Shopify customer-account)
+- path: /.well-known/ucp
+  status: 200
+  file: str8bat-ucp.json
+  note: Universal Commerce Protocol (ucp.dev) merchant profile; exposes a shopping MCP endpoint
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/assetlinks.json
+  status: 200
+  note: Android App Links (Shopify)
+- path: /.well-known/apple-app-site-association
+  status: 200
+  note: Apple universal links (Shopify)

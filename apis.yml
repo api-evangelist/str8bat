@@ -1,7 +1,16 @@
 aid: str8bat
 name: str8bat
-description: str8bat is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  str8bat is a Bangalore, India based sports-technology company that builds a pocket-sized
+  IoT sensor which attaches to a cricket bat and captures batting metrics in real time —
+  bat speed, impact speed, back-lift angle, timing, sweet-spot placement and a 360-degree
+  view of every shot. The sensor pairs with the str8bat mobile app (iOS and Android) to
+  deliver instant, visual and actionable insights plus an AI cricket coach. The company
+  reports 30,000+ active users, 6+ million shots recorded and operations across 350+
+  Indian cities and 14+ countries. str8bat is a consumer hardware and mobile-app company
+  and publishes no first-party developer API; its str8bat.com storefront runs on Shopify,
+  which exposes standard commerce discovery surfaces (customer-account OIDC and a Universal
+  Commerce Protocol agent-commerce MCP endpoint).
 url: https://raw.githubusercontent.com/api-evangelist/str8bat/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +18,31 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://www.str8bat.com/cdn/shop/files/IMG_2298_3e825468-c52f-4c13-ae70-3746b7013fe4.webp
 tags:
 - Company
+- Sports
+- Cricket
+- IoT
+- Sensors
+- Wearables
+- Analytics
+- Sports Technology
+- Mobile
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +52,26 @@ maintainers:
 common:
 - type: Website
   url: https://str8bat.com/
+- type: Blog
+  url: https://www.str8bat.com/blogs/str8bat-scoop
+- type: Support
+  url: https://www.str8bat.com/pages/contact
+- type: HelpCenter
+  url: https://www.str8bat.com/pages/faqs
+- type: PrivacyPolicy
+  url: https://www.str8bat.com/pages/privacy-policy
+- type: TermsOfService
+  url: https://www.str8bat.com/pages/terms-and-conditions
+- type: WellKnown
+  url: well-known/str8bat-well-known.yml
+- type: LLMsTxt
+  url: llms/str8bat-llms.txt
+- type: MCPServer
+  url: mcp/str8bat-mcp.yml
+- type: DomainSecurity
+  url: security/str8bat-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1
