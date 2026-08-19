@@ -2,11 +2,10 @@ generated: '2026-07-21'
 method: searched
 status: published
 source: https://str8bat.com/.well-known/ucp
-note: >-
-  str8bat publishes no first-party API MCP server. The str8bat.com storefront runs
-  on Shopify and exposes a Universal Commerce Protocol (ucp.dev) shopping MCP endpoint
-  for agent-driven commerce (catalog search, cart, checkout, fulfillment). This is a
-  Shopify-platform MCP surface bound to the str8bat merchant, not a str8bat product API.
+note: str8bat publishes no first-party API MCP server. The str8bat.com storefront runs on Shopify and
+  exposes a Universal Commerce Protocol (ucp.dev) shopping MCP endpoint for agent-driven commerce (catalog
+  search, cart, checkout, fulfillment). This is a Shopify-platform MCP surface bound to the str8bat merchant,
+  not a str8bat product API.
 server:
   name: str8bat-shopping-ucp
   transport: http
@@ -18,3 +17,11 @@ capabilities:
 - dev.ucp.shopping.checkout
 - dev.ucp.shopping.fulfillment
 - dev.ucp.shopping.cart
+deployment:
+  mode: remote
+  endpoint: https://str8batindia.myshopify.com/api/ucp/mcp
+  verified: probed
+  probe: live
+  tools: 13
+  checked: '2026-08-12'
+  source: catalog MCP census
